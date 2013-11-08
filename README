@@ -1,0 +1,51 @@
+README 
+
+Directory Info
+========================================================================================================
+1. src/
+	This directory contains the main source code.  
+
+
+2. dramanan_files/
+	This directory contains files which are originally downloaded from the source link:
+"http://www.ics.uci.edu/~xzhu/face/face-release1.0-basic.zip". Some of the files are modified
+according to our need.
+
+
+3. opencv_files/
+	This directory contains the OpenCV viola-jones face detector executable alongwith
+modified haarcascade xml files.
+
+
+4. out_dir/
+	The output images and the viola-jones detection files for each image are directed to
+this folder. After the code is done running, get the output images from this folder.
+
+
+5. images/
+	This folder contains sample images obtained from our driver dataset and some other
+random images. This folder also has the sample "list.txt" file.
+
+
+Running the code
+========================================================================================================
+The main folder has the "demo.m" file.
+To run the code. Follow these steps:
+1. Extract the tar.gz file.
+2. Start matlab.
+3. Move to home folder i.e near_realtime_faceparsing_v1.0/
+4. If you want to run the code on:
+   i. Image set, then put the images inside a directory and get the path of this directory.
+   ii. Video. Extract the video frames and put them in a directory and get the of the same directory.
+   As an example check the "near_realtime_faceparsing_v1.0/images" directory. 
+   NOTE: Images should be in "jpg" format.
+5. Make a txt file and list out the image names in the order you want them to be processed.
+   As an example check "near_realtime_faceparsing_v1.0/images/list.txt" file.
+6. Run "demo" with the following parameter:
+   i.   global_trflag : 0 if you don't need tracking. 1 if tracking is required.
+   ii.  in_dir : This is the absolute path of the input image directories.
+   iii. in_file_list : The path to the file listing the image names sequentially.
+
+   As an example :
+   >> demo(1,'images/','images/list.txt');
+    
