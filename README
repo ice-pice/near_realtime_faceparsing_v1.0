@@ -1,7 +1,7 @@
 README 
 
 Directory Info
-========================================================================================================
+=============================
 1. src/
 	This directory contains the main source code.  
 
@@ -28,7 +28,7 @@ random images. This folder also has the sample "list.txt" file.
 
 
 Running the code
-========================================================================================================
+=============================
 The main folder has the "demo.m" file.
 To run the code. Follow these steps:
 1. Extract the tar.gz file.
